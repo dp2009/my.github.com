@@ -16,44 +16,93 @@ zh即表示中文-->
     <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/entry.css"/>
+    <script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+   
+   <script type="text/javascript">
     
+        $(function(){
+        	      //x-->显示与影藏
+        	  	 $("input[class='inpt']").focusin(function(){
+    	 	         $(this).siblings(".ximg").show();   	 	        
+    	 	         $(this).parent().siblings().children(".ximg").hide();
+    	 	         $(this).parent().siblings().children(".ximg2").hide();
+    	 	         
+    	         });
+    	          $("input[class='inpt2']").focusin(function(){
+    	          	
+    	 	         $(this).siblings(".ximg2").show();
+    	 	        
+    	 	         
+    	 	         $(this).parent().siblings().children(".ximg").hide();
+    	 	         $(this).parent().siblings().children(".ximg2").hide();
+    	 	         
+    	 	           
+    	          })
+    	          
+    	          $(".ximg").click(function(){  	          	 
+    	          	  $(this).siblings("input[class='inpt']").val("");  	          	    	          	  
+    	          });
+    	          $(".ximg2").click(function(){  	          	 
+    	          	  $(this).siblings("input[class='inpt2']").val("");  	          	    	          	  
+    	          })
+    	          
+        	      $(".inp_btn").click(function(){
+        	      	  $(this).parent().siblings(".yanzheng").children(".ximg2").hide();
+        	      	  console.log('www')
+        	      })
+        	     
+        })
+  
+    </script>
 	</head>
 	<body>
 		<div class="bg">
 			
-		
-		<div class="header">
-			 <div class="huimg"><img src="img/dp_001.png" /></div>
-			 <div class="zhuce"> <a href="zhuce.html" class="zhu">免费注册</a></div>
-		</div>
 		<div class="banner">
-			  <img src="img/login.png" />
+			  <div class="num1">
+			       <div class="home">
+			       			<a href="shouye.html"><img   src="img/dp_032.png" /></a>
+			       </div>
+			  </div>
+			  <div class="denglu">登录</div>
+			  <div class="zhuce"> <a href="zhuce.html" class="zhu">免费注册</a></div>
 		</div>
+		<div class="header">
+			 <div class="huimg">
+			 	<img src="img/dp_001.png" />
+			 <!--	<img src="img/dp_001.png" />-->
+			    <p class="kouhao">财富人生·一路有我</p>
+			 </div>
+		</div>
+
 		<div class="main">
-			 <form action="" method="post" >
+			 <form action="" method="post" >			 	
+			 	<div class="main_inp">
+			 	<i class="imgtu"><img  src="img/dp_026.png" /></i>
+			 	<input  type="text" class="inpt" placeholder="请输入手机号码" />
+			 	<i class="ximg"><img src="img/dp_007.png" /></i>
+			 	</div>
+			 	<div class="tixing">dfasff</div>
 			 	
 			 	<div class="main_inp">
-			 	<i class="imgtu"><img  src="img/qietu_21.png" /></i>
-			 	<input type="text" class="inpt" placeholder="请输入手机号码" />
-			 	<i class="ximg "><img src="img/dp_007.png" /></i>
-			 	</div>
-			 	<div class="tixing">dfasff</div>
-			 	<div class="main_inp">
-			    <i class="imgtu"><img  src="img/qietu_22.png" /></i>
+			    <i class="imgtu"><img  src="img/dp_027.png" /></i>
 			 	<input type="text" class="inpt"  placeholder="请输入密码" />
+			 	<i class="ximg"><img src="img/dp_007.png" /></i>
 			 	</div>
 			 	<div class="tixing">dfasff</div>
+			 	
 			 	<div class="main_inp yanzheng">
-			 	<i class="imgtu "><img  src="img/qietu_23.png" /></i>
-			 	<input type="text" class="inpt"  placeholder="请输入验证码" />
-			 	<i class="yanzhengma"><img src="img/yanzhengma.jpg" /></i>			 	
+			 	<i class="imgtu "><img  src="img/dp_028.png" /></i>
+			 	<input type="text" class="inpt2"  placeholder="请输入验证码" />			 	
+			 	<i class="ximg2 "><img src="img/dp_007.png" /></i>
+			 	<i class="yanzhengma"><img src="img/yanzhengma.jpg" /></i>
 			 	</div>
 			 	<div class="tixing">dfasff</div>
 			 	<div class="main_btn">
 			 	    <input type="button" class="inp_btn"  value="立即登录"/>
 			 	</div>
 			 	<div class="main_btn">
-			 	    <a href="#" class="mima" />忘记密码?</a>
+			 	    <a href="forgetpwd.html" class="mima" />忘记密码?</a>
 			 	</div>
 			 </form>
 		</div>

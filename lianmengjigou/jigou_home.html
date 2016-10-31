@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head lang=zh>
+<!--向搜索引擎表示该页面是html语言，并且语言为英文网站，其"lang"的意思就是“language”，语言的意思，而“en”即表示english
+你的页面如果是中文页面，可将其改为
+zh即表示中文-->
+		<meta charset="UTF-8">
+	    <!-- 移动端设屏幕标准宽为640px-->
+	    <!-- <meta name="viewport" content="width=640,user-scalable=no">	-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <!-- // 这meta的作用就是删除默认的苹果工具栏和菜单栏。content有两个值”yes”和”no”,当我们需要显示工具栏和菜单栏时，这个行meta就不用加了，默认就是显示-->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!--“apple-mobile-web-app-status-bar-style”作用是控制状态栏显示样式-->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	     <!-- iOS忽略将页面中的数字识别为电话号码-->
+	    <meta name="format-detection" content="telephone=no" />
+	    <link rel="stylesheet" href="../css/reset.css"/>
+	    <link rel="stylesheet" href="../css/entry.css"/>
+	    <link rel="stylesheet" type="text/css" href="../css/jigou.css"/>
+	     <script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+   
+     </head>
+	<body>
+		
+		<div class="d_blue2">
+			 <a href="jigou.html"><i class="d_backOne"></i></a>
+			 <div class="d_touzi">联盟机构</div>
+		</div>
+		
+		<div class="">
+     		<ul class="d_jigou" id="jghr_list">
+     			<li data-id=1 class="dp_font">合伙人</li>
+     			<li data-id=2>钻石代理商</li>
+     			<li data-id=3>金牌代理商</li>
+     			<li data-id=4>银牌代理商</li>
+     			<li data-id=5>普通投资人</li>
+     		</ul>
+     	</div>
+     	<!--//合伙人-->
+		<div class="jigou_list" >
+			<div class="jigou_num dp_partner">
+				<ul class="biao_num1">
+					<li><span class="bidNam1">合伙人数量:</span><span  class="bidNam2">100</span></li>
+					<li><span class="bidNam1">合伙人加盟收益:</span><span class="bidNam2">17.10</span></li>
+					<li><span class="bidNam1">合伙人投资收益:</span><span class="bidNam2">4</span></li>
+					<li><span class="bidNam1">合伙人投资待收益:</span><span class="bidNam2">20</span></li>
+				</ul>
+			</div>
+			<div class="jigou_num dp_zuanhi">
+				<ul class="biao_num1">
+					<li><span class="bidNam1">钻石代理商数量:</span><span  class="bidNam2">100</span></li>
+					<li><span class="bidNam1">钻石代理商加盟收益:</span><span class="bidNam2">17.10</span></li>
+					<li><span class="bidNam1">钻石代理商投资收益:</span><span class="bidNam2">4</span></li>
+					<li><span class="bidNam1">钻石代理商投资待收益:</span><span class="bidNam2">20</span></li>
+				</ul>
+			</div>
+			
+			<div class="jigou_num dp_gold "id="qwe">
+				<ul class="biao_num1">
+					<li><span class="bidNam1">金牌代理商数量:</span><span  class="bidNam2">100</span></li>
+					<li><span class="bidNam1">金牌代理商加盟收益:</span><span class="bidNam2">17.10</span></li>
+					<li><span class="bidNam1">金牌代理商投资收益:</span><span class="bidNam2">4</span></li>
+					<li><span class="bidNam1">金牌代理商投资待收益:</span><span class="bidNam2">20</span></li>
+				</ul>
+			</div>
+			<div class="jigou_num dp_silver">
+				<ul class="biao_num1">
+					<li><span class="bidNam1">银牌代理商数量:</span><span  class="bidNam2">100</span></li>
+					<li><span class="bidNam1">银牌代理商加盟收益:</span><span class="bidNam2">17.10</span></li>
+					<li><span class="bidNam1">银牌代理商投资收益:</span><span class="bidNam2">4</span></li>
+					<li><span class="bidNam1">银牌代理商投资待收益:</span><span class="bidNam2">20</span></li>
+				</ul>
+			</div>
+			<div class="jigou_num dp_general">
+				<ul class="biao_num1 ">
+					<li><span class="bidNam1">普通投资人数量:</span><span  class="bidNam2">100</span></li>
+					<li><span class="bidNam1">普通投资人加盟收益:</span><span class="bidNam2">17.10</span></li>
+					<li><span class="bidNam1">普通投资人投资收益:</span><span class="bidNam2">4</span></li>
+					<li><span class="bidNam1">普通投资人投资待收益:</span><span class="bidNam2">20</span></li>
+				</ul>
+			</div>
+			
+		</div>
+	
+		
+		
+		
+		
+	
+		
+	</body>
+	<script type="text/javascript">
+		$(function(){
+		        $("#jghr_list>li").click(function(){
+		        	    
+		        	    var dataId=$(this).attr("data-id");
+		        	    if(dataId==1){
+		        	    	 $(this).addClass("dp_font").siblings().removeClass("dp_font");
+		        	    	 $(".dp_partner").show().siblings().hide();
+		        	    }else if(dataId==2){
+		        	    	  $(this).addClass("dp_font").siblings().removeClass("dp_font");
+		        	    	 $(".dp_zuanhi").show().siblings().hide();
+		        	    
+		        	    }else if(dataId==3){
+		        	    	 $(this).addClass("dp_font").siblings().removeClass("dp_font");
+		        	    	 $(".dp_gold").show().siblings().hide();
+		        	    }else if(dataId==4){
+		        	    	 $(this).addClass("dp_font").siblings().removeClass("dp_font");
+		        	    	 $(".dp_silver").show().siblings().hide();
+		        	    }else if(dataId==5){
+		        	    	 $(this).addClass("dp_font").siblings().removeClass("dp_font");
+		        	    	 $(".dp_general").show().siblings().hide();
+		        	    }
+		        	    
+		        	   
+		        	
+		        })
+			
+			
+			
+		})
+		
+		
+		
+		
+	</script>
+</html>

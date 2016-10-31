@@ -1,0 +1,169 @@
+.d_jigou {
+    width: 100%;
+    height: 3rem;
+    border-bottom: 2px solid #ccc;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.d_jigou li {
+    width: 20%;
+    float: left;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: 500;
+    font-size:1rem;
+}
+.jigou_list{
+	width:100%;
+}
+.jigou_num {
+    width: 100%;
+    border-bottom: 0.5rem solid rgb(239,239,239);
+}
+.dp_silver,.dp_gold,.dp_general,.dp_zuanhi{
+	 display: none;
+}
+.dp_about_jigou,.dp_ul_jigou {
+    width: 100%;
+}
+ul.dp_ul_jigou>li {
+    width: 100%;
+    min-height: 3.5rem;
+    margin: 0 auto;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    border-bottom: 1px solid #CCCCCC;
+    padding-left: 5%;
+    padding-right: 5%;
+    position:relative;
+    font-size:1rem;
+}
+.about_tixing{
+	
+	position:absolute;
+	left:3rem;
+	top:2.2rem;
+	font-size:0.5rem;
+	background-color:#fff;
+	padding:0.1rem 0.5rem;
+	
+}
+.dp_font{
+	color:#0080E8;
+	border-bottom: 2px solid #0080E8;
+}
+.dp_emwImg{
+	width:5.5rem;
+	max-height:7.5rem;
+	display: inline-block;
+	padding: 0.5rem 0rem ;
+	float:right;
+	
+}
+.about_Togo{
+	margin-top:3rem;
+	margin-bottom:3rem;
+}
+.about_font{
+	font-size:1rem;
+	color:#6E6B6B;
+}
+.tuijian_memb{
+    width: 100%;
+    height: 3rem;
+    border-bottom: 2px solid #ccc;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.tuijian_memb li {
+    width: 49%;
+    float: left;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.zsdailishang{
+	 width:100%;
+	 padding: 0px 5%;
+	
+	 height:4rem;
+	 line-height: 4rem;
+	 border-bottom:1px solid #ccc;
+}
+.zsdailishang>span{
+	  width:49%;
+	  display:inline-block;
+	  color:#6E6B6B;
+	  text-align: center;
+	 
+}
+.dp_zhuce,.dp_touzi{
+	display:none;
+}
+.aboutjigou_fs{
+	font-size:0.5rem;
+	
+}
+
+.aboutjigou_Name {
+    color: #6E6B6B;
+    display: block;
+    width: 30%;
+    
+    float: left;
+    padding-left: 0.5rem;
+}
+.aboutjigou_cont {
+    width: 70%;
+   
+    float: left;
+    color: #999999;
+    padding-left: 1rem;
+    overflow: hidden;
+}
+.shagnchuanImg{
+	width:100%;
+	max-height:7.5rem;
+	display: inline-block;
+	padding: 0.5rem 0rem ;
+	float:right;
+	padding-left:0.5rem;
+}
+.dp_fontStyle{
+	
+	display: block;
+}
+.cont{
+	width:100%;
+	overflow: hidden;
+}
+.erweima{
+    width: 30%;
+    display: inline-block;
+    padding-left: 0.5rem;
+    color: #6E6B6B;
+	
+}
+.erweiImg{
+	width:65%;
+	overflow: hidden;
+	display: inline-block; 
+	vertical-align: middle;
+}
+.shangID{
+	width: 40%;
+	display: inline-block;
+	padding-left: 0.5rem;   
+    color: #6E6B6B;
+}
+.shangIdImg{
+	width:55%;
+	overflow: hidden;
+	display: inline-block; 
+	vertical-align: middle;
+}

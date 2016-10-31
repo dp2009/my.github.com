@@ -40,7 +40,7 @@ a:hover{-webkit-user-select: none;}
  /* 取消a标签点击后的虚线框 */
 a:active {star:expression(this.onFocus=this.blur());}
 img{
-	width:100%;
+	
 	border:none;
 	vertical-align:middle;
 	}

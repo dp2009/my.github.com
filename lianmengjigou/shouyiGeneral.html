@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head lang=zh>
+<!--向搜索引擎表示该页面是html语言，并且语言为英文网站，其"lang"的意思就是“language”，语言的意思，而“en”即表示english
+你的页面如果是中文页面，可将其改为
+zh即表示中文-->
+		<meta charset="UTF-8">
+	    <!-- 移动端设屏幕标准宽为640px-->
+	    <!-- <meta name="viewport" content="width=640,user-scalable=no">	-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <!-- // 这meta的作用就是删除默认的苹果工具栏和菜单栏。content有两个值”yes”和”no”,当我们需要显示工具栏和菜单栏时，这个行meta就不用加了，默认就是显示-->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!--“apple-mobile-web-app-status-bar-style”作用是控制状态栏显示样式-->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	     <!-- iOS忽略将页面中的数字识别为电话号码-->
+	    <meta name="format-detection" content="telephone=no" />
+	    <link rel="stylesheet" href="../css/reset.css"/>
+	    <link rel="stylesheet" href="../css/entry.css"/>
+	    <link rel="stylesheet" type="text/css" href="../css/jigou.css"/>
+	     <script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+   
+     </head>
+	<body>
+		
+		<div class="d_blue2">
+			 <a href="lianmengShouyi.html"><i class="d_backOne"></i></a>
+			 <div class="d_touzi">普通投资人收益</div>
+		</div>
+		<div class="clear:both"></div>
+			
+		
+		<div class="zsdailishang">
+			<span>推荐代理商注册收益:0元</span>
+			<span>推荐代理商投资收益:0元</span>
+		</div>
+			
+		
+		
+		<div class="">
+     		<ul class="tuijian_memb" id="jghr_list">
+     			<li data-id=1 class="dp_font">推荐代理商注册</li>
+     			<li data-id=2>推荐代理商投资</li>
+     		</ul>
+     	</div>
+     	
+		   
+			<div class="jigou_num dp_zhuce ">
+				<ul class="biao_num1">
+					<li><span class="bidNam1">用户名:</span><span  class="bidNam2">xxxoo</span></li>
+					<li><span class="bidNam1">姓名:</span><span class="bidNam2">sss</span></li>
+					<li><span class="bidNam1">电话:</span><span class="bidNam2">4344234</span></li>
+					<li><span class="bidNam1">注册时间:</span><span class="bidNam2">2020-12-05</span></li>
+					<li><span class="bidNam1">奖励金额:</span><span class="bidNam2">2020-12-05</span></li>
+					<li><span class="bidNam1">奖励原因:</span><span class="bidNam2">2020-12-05</span></li>
+					<li><span class="bidNam1">奖励状态:</span><span class="bidNam2">2020-12-05</span></li>
+					<li><span class="bidNam1">操作:</span><span class="bidNam2">2020-12-05</span></li>
+				</ul>
+			</div>
+			
+			
+			<div class="jigou_num dp_touzi">
+				<ul class="biao_num1">
+					<li><span class="bidNam1">用户名:</span><span  class="bidNam2">xxxoo</span></li>
+					<li><span class="bidNam1">姓名:</span><span class="bidNam2">sss</span></li>
+					<li><span class="bidNam1">电话:</span><span class="bidNam2">4344234</span></li>
+					<li><span class="bidNam1">注册时间:</span><span class="bidNam2">2020-12-05</span></li>
+					<li><span class="bidNam1">奖励金额:</span><span class="bidNam2">2020-12-05</span></li>
+					<li><span class="bidNam1">奖励原因:</span><span class="bidNam2">2020-12-05</span></li>
+					<li><span class="bidNam1">奖励状态:</span><span class="bidNam2">2020-12-05</span></li>
+					<li><span class="bidNam1">操作:</span><span class="bidNam2">2020-12-05</span></li>
+				</ul>
+			</div>
+			
+			
+			
+			
+	
+	
+		
+		
+		
+		
+	
+		
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			    $(".dp_zhuce").show();
+		        $("#jghr_list>li").click(function(){
+		        	    
+		        	    var dataId=$(this).attr("data-id");
+		        	    
+		        	    if(dataId==1){
+		        	    	 $(this).addClass("dp_font").siblings().removeClass("dp_font");
+		        	    	 $(".dp_zhuce").show();
+		        	    	 $(".dp_touzi").hide();
+		        	    }else if(dataId==2){
+		        	    	  $(this).addClass("dp_font").siblings().removeClass("dp_font");
+		        	    	 $(".dp_touzi").show();
+		        	          $(".dp_zhuce").hide();
+		        	    }
+		        	    
+		        	   
+		        	
+		        })
+			
+			
+			
+		})
+		
+		
+		
+		
+	</script>
+</html>

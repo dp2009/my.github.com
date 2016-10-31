@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head lang=zh>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- // 这meta的作用就是删除默认的苹果工具栏和菜单栏。content有两个值”yes”和”no”,当我们需要显示工具栏和菜单栏时，这个行meta就不用加了，默认就是显示-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--“apple-mobile-web-app-status-bar-style”作用是控制状态栏显示样式-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+     <!-- iOS忽略将页面中的数字识别为电话号码-->
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/entry.css"/>
+    <script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="d_blue2">
+			 <a href="licai.html"><i class="d_backOne"></i></a>
+			 <div class="d_btn1 d_btn2" id="d_btn1">
+			 	个人融资
+			 </div>
+			  <div class="d_btn1" id="d_btn2">
+			 	企业融资
+			 </div>
+		</div>
+		
+		<div class="d_process2">
+			
+			<div class="d_pro2">
+			 	 <img class="dd_imgs1" src="img/dp_015.png"/>
+			 	 <p class="d_size2">1.填写借款申请</p>
+			 </div>
+			 <div class="d_arrow2">
+			 	 <img class="d_arr2" src="img/dp_033.png"/>
+			 </div>
+			 <div class="d_pro2">
+			 	 <img class="dd_imgs1" src="img/dp_016.png"/>
+			 	<p class="d_size2">1.填写借款申请</p>
+			 </div>
+			  <div class="d_arrow2">
+			 	 <img class="d_arr2"  src="img/dp_033.png"/>
+			 </div>
+			 <div class="d_pro2">
+			 	<img class="dd_imgs1" src="img/dp_017.png"/>
+			 	<p class="d_size2">1.填写借款申请</p>
+			 </div>
+			
+			 
+		</div>
+		<div class="d_gra"></div>
+		<!--//个人融资-->
+		<div id="personal"class="hide">
+			
+		
+		<form action="" method="post" class="d_form1" id="d_form1">
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">贷款人</li>
+		        <li class="d_ulLi2"><input type="text" placeholder="请输入借款人姓名" class="d_input1"/></li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">手机号码</li>
+		        <li class="d_ulLi2"><input type="text" placeholder="请输入借款人手机号码" class="d_input1"/></li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">所在地区</li>
+		        <li class="d_ulLi2"><input type="text" placeholder="请输入您的地址" class="d_input1"/></li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">贷款金额</li>
+		        <li class="d_ulLi2">
+		        	   <input type="text" placeholder="请输入借款金额(不足一万元写小数,如0.8万)" class="d_input2"/>
+		               <span class="fr">万元</span>
+		        </li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">借款期限</li>
+		        <li class="d_ulLi2">
+		        	<input type="text" placeholder="请输入借款期限" class="d_input2"/>
+		        	 <span class="fr">个月</span>
+		        </li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">抵押物</li>
+		        <li class="d_ulLi2"><input type="text" placeholder="请选择抵押物" class="d_input1"/></li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul2">
+		       	<li class="fl d_ulLi4">验证码</li>
+		        <li class="fl d_ulLi3">
+		        	<input type="text" placeholder="请输入验证码" class=""/>		             
+		        </li>
+		        <li class="fr d_yan">
+
+		        	<img class="d_yanImg" src="img/yanzhengma2.png"/>
+
+		        </li>
+		       </ul>
+			</div>	
+            
+           <div class="d_table2">
+		           <a href="#" class="d_tijiao">提交申请</a>
+		           <p class="d_shuo">融资申请说明:我们提供公司融资、抵押贷款、房车贷款等各种融资信贷服务</p>
+			</div>	
+		</form>
+		</div>
+		<!--//公司融资-->
+		<div id="comp" class="hide">
+			
+		
+		<form action="" method="post" class="d_form1" >
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">贷款公司</li>
+		        <li class="d_ulLi2"><input type="text" placeholder="请输入借款人姓名" class="d_input1"/></li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">手机号码</li>
+		        <li class="d_ulLi2"><input type="text" placeholder="请输入借款人手机号码" class="d_input1"/></li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">所在地区</li>
+		        <li class="d_ulLi2"><input type="text" placeholder="请输入您的公司地址" class="d_input1"/></li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">贷款金额</li>
+		        <li class="d_ulLi2">
+		        	   <input type="text" placeholder="请输入借款金额(不足一万元写小数,如0.8万)" class="d_input2"/>
+		               <span class="fr">万元</span>
+		        </li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">借款期限</li>
+		        <li class="d_ulLi2">
+		        	<input type="text" placeholder="请输入借款期限" class="d_input2"/>
+		        	 <span class="fr">个月</span>
+		        </li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul1">
+		       	<li class="d_ulLi1">抵押物</li>
+		        <li class="d_ulLi2"><input type="text" placeholder="请选择抵押物" class="d_input1"/></li>
+		       </ul>
+			</div>	
+			<div class="d_table1">
+		       <ul class="d_ul2">
+		       	<li class="fl d_ulLi4">验证码</li>
+		        <li class="fl d_ulLi3">
+		        	<input type="text" placeholder="请输入验证码" class=""/>		             
+		        </li>
+		        <li class="fr d_yan">
+
+		        	<img class="d_yanImg" src="img/yanzhengma2.png"/>
+
+		        </li>
+		       </ul>
+			</div>	
+            
+           <div class="d_table2">
+		           <a href="#" class="d_tijiao">提交申请</a>
+		           <p class="d_shuo">融资申请说明:我们提供公司融资、抵押贷款、房车贷款等各种融资信贷服务</p>
+			</div>	
+		</form>
+		</div>
+		<div class="sssssbbbbb"></div>
+		
+		
+		
+	
+		
+
+		
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("#personal").show();
+			$("#d_btn1").click(function(){
+				  $(this).addClass("d_btn2");
+				  $("#d_btn2").removeClass("d_btn2");
+				  $("#personal").show();
+				  $("#com").hide();
+			});
+			$("#d_btn2").click(function(){
+				  $(this).addClass("d_btn2");
+				  $(this).addClass("d_btn2");
+				  $("#d_btn1").removeClass("d_btn2");
+				  $("#comp").show();
+				  $("#personal").hide();
+			});
+		
+		 
+			
+		
+		
+		})
+	</script>
+</html>
