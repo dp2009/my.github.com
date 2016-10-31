@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head lang=zh>
+<!--向搜索引擎表示该页面是html语言，并且语言为英文网站，其"lang"的意思就是“language”，语言的意思，而“en”即表示english
+你的页面如果是中文页面，可将其改为
+zh即表示中文-->
+		<meta charset="UTF-8">
+	    <!-- 移动端设屏幕标准宽为640px-->
+	    <!-- <meta name="viewport" content="width=640,user-scalable=no">	-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <!-- // 这meta的作用就是删除默认的苹果工具栏和菜单栏。content有两个值”yes”和”no”,当我们需要显示工具栏和菜单栏时，这个行meta就不用加了，默认就是显示-->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!--“apple-mobile-web-app-status-bar-style”作用是控制状态栏显示样式-->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	     <!-- iOS忽略将页面中的数字识别为电话号码-->
+	    <meta name="format-detection" content="telephone=no" />
+	    <link rel="stylesheet" href="css/reset.css"/>
+	    <link rel="stylesheet" href="css/entry.css"/>
+	     <script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+   
+     </head>
+	<body>
+		
+		<div class="d_blue2">
+			 <a href="zhanghuguanli.html"><i class="d_backOne"></i></a>
+			 <div class="d_touzi">安全中心</div>
+		</div>
+		<div class="d_anquan">
+			<ul class="dp_ulTab">
+        	  <li >
+        		  <span class="dp_Name">昵称</span>
+        		  <div class="dp_tabRig"><span class="dp_sfz">followme</span></div>
+        	  </li>
+        	   <li >
+        		  <span class="dp_Name">用户编号</span>
+        		  <div class="dp_tabRig"><span class="dp_sfz">123456</span></div>
+        	  </li>
+        	   <li >
+        		  <span class="dp_Name">实名认证</span>
+        		  <div class="dp_tabRig">
+        		  	     <div class="dp_rzName"> 李杰 </div>
+        		  	     <div class="dp_gotRz"> 
+        		  	     	 <!--  <span>已认证 </span>
+        		  	           <img class="dp_rzImg" src="img/xz.png"/>-->
+        		  	           <a href="gotorenzheng.html"><img class="dp_phone" src="img/dp_033.png"/> </a>
+        		  	     </div>
+        		  </div>
+        	  </li>
+        	   <li >
+        		  <span class="dp_Name">身份证号</span>
+        		  <div class="dp_tabRig"><span class="dp_sfz">123456789987654</span></div>
+        	  </li>
+        	   <li id="p_bangSj">
+        		  <span class="dp_Name">绑定手机</span>
+        		  <div class="dp_tabRig">
+        		  	     <div class="dp_rzName"> 123456789 </div>
+        		  	     <div class="dp_gotRz"> <img class="dp_phone" src="img/dp_033.png"/> </div>
+        		 
+        		  </div>
+        	  </li>
+        	   <li id="p_bangMIMA">
+        		  <span class="dp_Name">交易密码</span>
+        		  <div class="dp_tabRig">
+        		  	     <div class="dp_rzName"> 123456789 </div>
+        		  	     <div class="dp_gotRz"> <img class="dp_phone" src="img/dp_033.png"/> </div>
+        		         
+        		  </div>
+        	  </li>
+        	  
+        	   <li id="p_bangYX">
+        		  <span class="dp_Name">绑定邮箱</span>
+        		  <div class="dp_tabRig">
+        		  	     <div class="dp_rzName"> 123456789 </div>
+        		  	     <div class="dp_gotRz"> <img class="dp_phone" src="img/dp_033.png"/> </div>
+        		  </div>
+        	  </li>
+        	   <li >
+        		  <span class="dp_chuan">上传证件正面</span>
+        		  <div class="dp_gotoInput">
+        		  	     <div class="dp_rzName"> 
+        		  	     	<input type="file" id="file_input1" class="dp_shangchuan"  /> 
+        		  	     </div>
+        		  	     <div class="dp_gotRz"> <img class="dp_phone" src="img/dp_033.png"/> </div>
+        		  </div>
+        	  </li>
+        	  <li >
+        		  <span class="dp_chuan">上传证件反面</span>
+        		  <div class="dp_gotoInput">
+        		  	     <div class="dp_rzName"> 
+        		  	     	<input type="file" id="file_input2" class="dp_shangchuan"  /> 
+        		  	     </div>
+        		  	     <div class="dp_gotRz"> <img class="dp_phone" src="img/dp_033.png"/> </div>
+        		  </div>
+        	  </li>
+            </ul>
+       </div>
+       <div id="rrr1"class="errorimg" style="margin-bottom: 3rem;"></div><!--//拿来放图片用的-->
+       <div id="rrr2"class="errorimg" style="margin-bottom: 3rem;"></div><!--//拿来放图片用的-->
+       
+           <!-- //绑定手机弹出框-->
+           <div class="dp_mask" id="dp_mask"> </div>
+           <div class="dp_shouji" id="dp_shouji">
+           	     <ul>
+           	     	<li>
+           	     		<span class="dp_colorBlue">绑定手机</span>
+           	     		<div class="dp_imgX" id="dp_closeXimg"><img src="img/close.png" /></div>
+           	     	</li>
+           	     	<li>
+           	     		<span class="dp_coloryz">您的验证手机</span>
+           	     	    <input type="text"  class="dp_inputSJ" placeholder="请输入手机号码" />
+           	     	</li>
+           	     	<li>
+           	     		<span class="dp_coloryz">手机校验码</span>
+           	     	    <input type="text"  class="dp_inputSJ" placeholder="请输入手机验证码" />
+           	     		<span class="dp_jym">获取手机校验码</span>
+           	     	</li>
+           	     	<li style="border-bottom: none">
+           	     		 <a  class="dp_sjBtn">确定</a>
+           	     		 <p class="dp_Notice">注意:若该手机号码无法接受验证码，请拨打客服电话申请更改验证手机</p>
+           	     	</li>
+           	     </ul>
+           </div> 
+           
+           
+           <!-- //交易密码-->
+           <div class="dp_mask" id="dp_maskMM"> </div>
+           <div class="dp_shouMM" id="dp_shouMM">
+           	     <ul>
+           	     	<li>
+           	     		<span class="dp_colorBlue">交易密码</span>
+           	     		<div class="dp_imgX" id="dp_closeMM"><img src="img/close.png" /></div>
+           	     	</li>
+           	     	<li>
+           	     		<span class="dp_coloryz">原交易密码</span>
+           	     	    <input type="text"  class="dp_inputSJ" placeholder="请输入手机号码" />
+           	     	</li>
+           	     	<li>
+           	     		<span class="dp_coloryz">新交易密码</span>
+           	     	    <input type="text"  class="dp_inputSJ" placeholder="请输入手机验证码" />
+           	     		
+           	     	</li>
+           	     	<li>
+           	     		<span class="dp_coloryz">确认新密码</span>
+           	     	    <input type="text"  class="dp_inputSJ" placeholder="请输入手机验证码" />
+           	     		<span class="dp_error">密码不正确</span>
+           	     	</li>
+           	     	<li style="border-bottom:none">
+           	     		 <a  class="dp_sjBtn">确定</a>
+           	     	</li >
+           	     </ul>
+           </div>  
+          
+          
+          <!-- //绑定邮箱-->
+           <div class="dp_mask" id="dp_maskYX"> </div>
+           <div class="dp_shouji" id="dp_shouYX">
+           	     <ul>
+           	     	<li>
+           	     		<span class="dp_colorBlue">绑定邮箱</span>
+           	     		<div class="dp_imgX" id="dp_closeYX"><img src="img/close.png" /></div>
+           	     	</li>
+           	     	<li>
+           	     		<span class="dp_coloryz">您的验证手机</span>
+           	     	    <input type="text"  class="dp_inputSJ" placeholder="请输入手机号码" />
+           	     	</li>
+           	     	<li>
+           	     		<span class="dp_coloryz">手机校验码</span>
+           	     	    <input type="text"  class="dp_inputSJ" placeholder="请输入手机验证码" />
+           	     		<span class="dp_jym">获取手机校验码</span>
+           	     	</li>
+           	     	<li style="border-bottom: none">
+           	     		 <a  class="dp_sjBtn">确定</a>
+           	     		 <p class="dp_Notice">注意:若该手机号码无法接受验证码，请拨打客服电话申请更改验证手机</p>
+           	     	</li>
+           	     </ul>
+           </div> 
+			
+			
+		
+	
+
+	
+		
+	</body>
+	<script type="text/javascript">
+	       $(function(){
+	       	
+	       	     /* //绑定手机*/
+	       	    
+	       	      $("#p_bangSj").click(function( ){
+	       	      	         
+	       	      	     if( $("#dp_mask").is(":hidden")&&$("#dp_shouji").is(":hidden") ){
+	       	      	            $("#dp_mask").show();
+	       	      	            $("#dp_shouji").slideDown();
+	       	      	      }else{
+	       	      	      	     $("#dp_mask").hide();
+	       	      	             $("#dp_shouji").hide();
+	       	      	      }
+	       	      });
+	       	      $("#dp_closeXimg").click(function( ){
+	       	      	         
+	       	      	       $("#dp_mask").hide();
+	       	      	       $("#dp_shouji").hide();
+	       	      });
+	       	      
+	       	      
+	       	      /* 绑定交易密码*/ 
+	       	      
+	       	      $("#p_bangMIMA").click(function( ){
+	       	      	         
+	       	      	     if( $("#dp_maskMM").is(":hidden")&&$("#dp_shouMM").is(":hidden") ){
+	       	      	            $("#dp_maskMM").show();
+	       	      	            $("#dp_shouMM").slideDown();
+	       	      	      }else{
+	       	      	      	     $("#dp_maskMM").hide();
+	       	      	             $("#dp_shouMM").hide();
+	       	      	      }
+	       	      });
+	       	      $("#dp_closeMM").click(function( ){
+	       	      	         
+	       	      	       $("#dp_maskMM").hide();
+	       	      	       $("#dp_shouMM").hide();
+	       	      });
+	       	      
+	       	      
+	       	       /* 绑定邮箱  */
+	       	    
+	       	      $("#p_bangYX").click(function( ){
+	       	      	         
+	       	      	     if( $("#dp_maskYX").is(":hidden")&&$("#dp_shouYX").is(":hidden") ){
+	       	      	            $("#dp_maskYX").show();
+	       	      	            $("#dp_shouYX").slideDown();
+	       	      	           
+	       	      	      }else{
+	       	      	      	     $("#dp_maskYX").hide();
+	       	      	             $("#dp_shouYX").hide();
+	       	      	      }
+	       	      });
+	       	      
+	       	      $("#dp_closeYX").click(function( ){
+	       	      	       
+	       	      	        $("#dp_maskYX").hide();
+	       	      	        $("#dp_shouYX").hide();
+	       	      	      
+	       	      	      
+	       	      });
+	       	      
+	       })
+	</script>
+	<script type="text/javascript">
+		    var aaa = document.getElementById("rrr1"); //获取显示图片的div元素
+			var input = document.getElementById("file_input1"); //获取选择图片的input元素
+			      
+			      //这边是判断本浏览器是否支持这个API。
+			if(typeof FileReader==='undefined'){ 
+			    aaa.innerHTML = "抱歉，你的浏览器不支持 FileReader"; 
+			    input.setAttribute('disabled','disabled'); 
+			}else{ 
+			    input.addEventListener('change',readFilename,false); //如果支持就监听改变事件，一旦改变了就运行readFile函数。
+			} 
+			
+			      
+			function readFilename(){ 
+			    var file = this.files[0]; //获取file对象
+			    //判断file的类型是不是图片类型。
+			    if(!/image\/\w+/.test(file.type)){ 
+			        alert("文件必须为图片！"); 
+			        return false; 
+			    } 
+			    
+			    var reader = new FileReader(); //声明一个FileReader实例
+			    reader.readAsDataURL(file); //调用readAsDataURL方法来读取选中的图像文件
+			    //最后在onload事件中，获取到成功读取的文件内容，并以插入一个img节点的方式显示选中的图片
+			    reader.onload = function(e){ 
+			        aaa.innerHTML = '<img  src="'+this.result+'" alt=""/>' 
+			    } 
+			}
+			
+			
+			//\n
+			var aaaName = document.getElementById("rrr2"); //获取显示图片的div元素
+			var inputName = document.getElementById("file_input2"); //获取选择图片的input元素
+			      
+			      //这边是判断本浏览器是否支持这个API。
+			if(typeof FileReader==='undefined'){ 
+			    aaaName.innerHTML = "抱歉，你的浏览器不支持 FileReader"; 
+			    inputName.setAttribute('disabled','disabled'); 
+			}else{ 
+			    inputName.addEventListener('change',readFile,false); //如果支持就监听改变事件，一旦改变了就运行readFile函数。
+			} 
+			
+			      
+			function readFile(){ 
+			    var file = this.files[0]; //获取file对象
+			    //判断file的类型是不是图片类型。
+			    if(!/image\/\w+/.test(file.type)){ 
+			        alert("文件必须为图片！"); 
+			        return false; 
+			    } 
+			    
+			    var reader = new FileReader(); //声明一个FileReader实例
+			    reader.readAsDataURL(file); //调用readAsDataURL方法来读取选中的图像文件
+			    //最后在onload事件中，获取到成功读取的文件内容，并以插入一个img节点的方式显示选中的图片
+			    reader.onload = function(e){ 
+			        aaaName.innerHTML = '<img  src="'+this.result+'" alt=""/>' 
+			    } 
+			}
+	</script>
+</html>

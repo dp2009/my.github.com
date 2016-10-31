@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head lang=zh>
+<!--向搜索引擎表示该页面是html语言，并且语言为英文网站，其"lang"的意思就是“language”，语言的意思，而“en”即表示english
+你的页面如果是中文页面，可将其改为
+zh即表示中文-->
+		<meta charset="UTF-8">
+	    <!-- 移动端设屏幕标准宽为640px-->
+	    <!-- <meta name="viewport" content="width=640,user-scalable=no">	-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <!-- // 这meta的作用就是删除默认的苹果工具栏和菜单栏。content有两个值”yes”和”no”,当我们需要显示工具栏和菜单栏时，这个行meta就不用加了，默认就是显示-->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!--“apple-mobile-web-app-status-bar-style”作用是控制状态栏显示样式-->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	     <!-- iOS忽略将页面中的数字识别为电话号码-->
+	    <meta name="format-detection" content="telephone=no" />
+	    <link rel="stylesheet" href="css/reset.css"/>
+	    <link rel="stylesheet" href="css/entry.css"/>
+	     <script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+       <style type="text/css">
+          .cxxq{
+          		width:100%;
+       	  	    height:100%;
+       	  	    position: absolute;
+       	  	    overflow: hidden;
+	       	  	top:0rem;
+	       	  	left:0rem;
+	       	  	z-index: 1;
+	       	  	display: none;
+          }
+       	  .mask{
+       	  	width:100%;
+       	  	height:100%;
+       	  	background-color:#333;
+       	  	opacity: 0.7;
+       	  	position: fixed;
+       	  	overflow: hidden;
+	       	top:0rem;
+	       	left:0rem;
+	       	z-index:-10;
+       	  	
+       	  }
+       	  .cx_table{
+       	  	 width:90%;
+       	  	 margin:9rem auto;
+       	  	 background-color: #fff;
+       	  	 border:1px solid #555555;
+       	  	 z-index:1000;
+       	  	 border-radius: 6px;
+       	  
+       	  }
+       	  .cxqx_left{
+       	  	width:45%;
+       	  	text-align: left;
+       	  	line-height: 4rem;
+       	  	display: inline-block;
+       	  	padding-left:1rem;
+       	  }
+       	  .cxqx_right{
+       	  	width:50%;
+       	  	text-align: right;
+       	  	line-height: 4rem;
+       	  	display: inline-block;
+       	  }
+       	  .cxxq_table{
+       	  	 margin:1rem 0rem;
+       	  	 font-size:1rem;
+       	  	 color:#333333;
+       	  }
+       	  .cxxq_table>li:last-child{
+       	  	border-bottom:none;
+       	  }
+       	  .cxxq_table>li{
+       	  	 height:4rem;
+       	  	 border-bottom:1px solid #F2F2F2;
+       	  }
+       	  .tbcx{
+       	  	 color:#0080E8;
+       	  	 font-size:1.5rem;
+       	  	 margin-left:1rem;
+       	  	 
+       	  }
+       	  .xxImg{
+       	  	width:1rem;
+       	  	float:right;
+       	  	margin-right:2rem;
+       	  	margin-top:0.5rem;
+       	  }
+       	  .agreeeTo{
+       	  	   width:30%;
+       	  	   
+       	  	   margin:0 auto;
+       	  	   color:#0080E8;
+       	  	   display: block;
+       	  	   
+       	  	   padding:1rem 2rem;
+       	  	   border-radius:4px;
+       	  	   color:#fff;
+       	  	   background-color:#0080E8;
+       	  	   margin-top:2rem;
+       	  }
+       </style>
+     </head>
+	<body>
+		
+		<div class="d_blue2">
+			 <a href="zhongxing.html"><i class="d_backOne"></i></a>
+			 <div class="d_touzi">我的车险</div>
+		</div>
+		
+		<div class="biao_jie1" style="display: block;">
+			<div class="biao_num">
+				<ul class="biao_num1">
+					<li><span class="bidNam1">车      主:</span><span  class="bidNam2">标满机头分成</span></li>
+					<li><span class="bidNam1">车           牌:</span><span class="bidNam2">2014/09/26</span></li>
+					<li><span class="bidNam1">车辆所在地区:</span><span class="bidNam2">400</span></li>
+					<li><span class="bidNam1">保险公司:</span><span class="bidNam2">2009</span></li>
+					<li><span class="bidNam1">保险金额:</span><span class="bidNam2">2009</span></li>
+					<li><span class="bidNam1" >详    情:</span><span class="bidNam2" onclick="showDe(this)">2009</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="cxxq">
+			
+		
+					<div class="mask">
+						  
+					</div>
+					 <div class="cx_table">
+						   	<ul class="cxxq_table">
+						   		<li>
+						   			<span class="tbcx ">投保车险 </span>
+						   			<img src="img/close.png" class="xxImg">
+						   		</li>
+						   		<li>
+						   			<span class="cxqx_left">车主姓名</span>
+						   			<span class="cxqx_right">主姓名</span>
+						   		</li>
+						   		<li>
+						   			<span class="cxqx_left">申购时间</span>
+						   			<span class="cxqx_right">主姓名</span>
+						   		</li>
+						   		<li>
+						   			<span class="cxqx_left">申购人</span>
+						   			<span class="cxqx_right">主姓名</span>
+						   		</li>
+						   		<li>
+						   			<span class="cxqx_left">车牌号</span>
+						   			<span class="cxqx_right">主2102</span>
+						   		</li>
+						   		<li>
+						   			<span class="cxqx_left">行驶城市</span>
+						   			<span class="cxqx_right">北京</span>
+						   		</li>
+						   		<li>
+						   			<span class="cxqx_left">手机号</span>
+						   			<span class="cxqx_right">000000000000</span>
+						   		</li>
+						   		<li>
+						   			<span class="cxqx_left">险种备注</span>
+						   			<span class="cxqx_right">太平洋保险丝</span>
+						   		</li>
+						   		<li>
+						   			<span class="cxqx_left">保费合计</span>
+						   			<span class="cxqx_right">10000</span>
+						   		</li>
+						   		<li>
+						   			<span class="agreeeTo">确认申购</span>
+						   		</li>
+						   	</ul>
+					 </div>
+		</div>
+	</body>
+	<script type="text/javascript">
+	       function showDe(){
+	       	     $(".cxxq").show();
+	       	
+	       }
+	       
+	       
+	       $(".xxImg").click(function(){
+	       	       $(".cxxq").hide();
+	       })
+	</script>
+</html>
